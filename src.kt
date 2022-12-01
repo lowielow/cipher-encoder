@@ -70,8 +70,7 @@ class Software {
         val decodeList = decodeInput.split(" ").map { it }.toMutableList()
         
         if (checkDecodeInput(decodeInput, decodeList) == true) {
-            
-            
+                  
             val twoMultiplier = mutableListOf(64, 32, 16, 8, 4, 2, 1)
             var twoIndex: Int = 0
             var decodeBinary: String = ""
@@ -116,7 +115,7 @@ class Software {
         // (2) check first block of each sequence is not 0 or 00
         var checkTwo: Int = 0
         for (i in 0..list.size - 2 step 2) {
-			      if (list[i] != "0" && list[i] != "00") {
+	    if (list[i] != "0" && list[i] != "00") {
                 checkTwo++
             }
         }        
